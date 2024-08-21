@@ -14,22 +14,21 @@ function M.config()
   end
 
   dashboard.section.header.val = {
-    [[ ★　✯   🛸                    🪐   .°•    |    ]],
-    [[    __     ° ★　•       🛰       __      / \   ]],
-    [[   / /   ____ ___  ______  _____/ /_    | O |  ]],
-    [[  / /   / __ `/ / / / __ \/ ___/ __ \   | O |  ]],
-    [[ / /___/ /_/ / /_/ / / / / /__/ / / /  /| | |\ ]],
-    [[/_____/\__,_/\__,_/_/ /_/\___/_/ /_/  /_(.|.)_\]],
+  [[ 🐱                            👿         ]], 
+  [[ __  __    _   _   _  __     _____ __  ___]],
+  [[|  \/  |  / \ | | | | \ \   / /_ _|  \/  |]],   
+  [[| |\/| | / _ \| | | |  \ \ / / | || |\/| |]],
+  [[| |  | |/ ___ \ |_| |   \ V /  | || |  | |]],
+  [[|_|  |_/_/   \_\___/     \_/  |___|_|  |_|]],
   }
-
   dashboard.section.buttons.val = {
-    button("f", icons.ui.Files .. " Find file", ":Telescope find_files <CR>"),
-    button("n", icons.ui.NewFile .. " New file", ":ene <BAR> startinsert <CR>"),
-    button("p", icons.git.Repo .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
-    button("r", icons.ui.History .. " Recent files", ":Telescope oldfiles <CR>"),
-    button("t", icons.ui.Text .. " Find text", ":Telescope live_grep <CR>"),
+    button("f", icons.ui.Files .. " Buscar archivo", ":Telescope find_files <CR>"),
+    button("n", icons.ui.NewFile .. " Nuevo archivo", ":ene <BAR> startinsert <CR>"),
+    button("p", icons.git.Repo .. " Buscar proyecto", ":lua require('telescope').extensions.projects.projects()<CR>"),
+    button("r", icons.ui.History .. " Archivos recientes", ":Telescope oldfiles <CR>"),
+    button("t", icons.ui.Text .. " Buscar texto", ":Telescope live_grep <CR>"),
     button("c", icons.ui.Gear .. " Config", ":e ~/.config/nvim/init.lua <CR>"),
-    button("q", icons.ui.SignOut .. " Quit", ":qa<CR>"),
+    button("q", icons.ui.SignOut .. " Exit", ":qa<CR>"),
   }
   local function footer()
     return "chrisatmachine.com"
